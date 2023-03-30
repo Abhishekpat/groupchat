@@ -1,0 +1,271 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  color: #383838;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  position: relative;
+}
+
+.signup-form {
+  display: grid;
+  grid-template-columns: 50rem 1fr;
+}
+
+.company-logo {
+  width: 240px;
+
+  margin-top: 4.8rem;
+  margin-bottom: 4.8rem;
+}
+
+.information-head {
+  max-width: 40rem;
+}
+
+.information-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.8rem;
+
+  margin-bottom: 1.8rem;
+}
+
+.hero-illustration {
+  width: 32rem;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  background-color: #e8f1f8;
+}
+
+.form-design {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 3.2rem;
+}
+
+.form-child {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.login-heading {
+  font-size: 3.3rem;
+  font-weight: 500;
+}
+
+.login-img {
+  width: 200px;
+}
+
+.socials-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+
+  padding: 1.4rem 7.8rem;
+  background-color: #4488c7;
+  border-radius: 1rem;
+}
+
+.social-icon {
+  font-size: 2.1rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.about-block {
+  text-align: center;
+  padding: 2.8rem;
+  border-radius: 1rem;
+
+  background-color: #4488c7;
+  color: #fff;
+  opacity: 0;
+}
+
+.contact-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.7rem;
+
+  margin-bottom: 5.6rem;
+}
+
+.contact-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+
+  border-radius: 0.5rem;
+  padding: 1.2rem 2.4rem;
+  background-color: #4488c7;
+  color: #fff;
+
+  transition: all 0.4s;
+}
+
+.contact-card:hover {
+  background-color: #007bff;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.mail-icon {
+  font-size: 1.75rem;
+}
+
+.contact-heading {
+  font-size: 1.4rem;
+}
+
+.about-heading {
+  font-size: 2.7rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+}
+
+.about-text {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  letter-spacing: 0.8px;
+}
+
+.copyright {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.input-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4.8rem;
+  row-gap: 3.2rem;
+
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.8rem;
+}
+
+.input-name {
+  font-size: 2.1rem;
+  font-weight: 400;
+  margin-bottom: 0.9rem;
+}
+
+.input-field-box {
+  border: none;
+  outline: none;
+
+  background-color: #bfe9f1;
+  padding: 1.8rem 2.4rem;
+  border-radius: 0.8rem;
+
+  font-size: 1.4rem;
+  font-family: inherit;
+}
+
+.sign-in-btn,
+.sign-up-btn {
+  font-size: 1.7rem;
+  font-family: inherit;
+  letter-spacing: 1px;
+
+  outline: none;
+  border: none;
+
+  background-color: #5fc8db;
+  color: #fff;
+  padding: 1.3rem 3.2rem;
+  cursor: pointer;
+
+  border-radius: 1rem 0 1rem 0;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+
+  transition: all 0.4s;
+}
+
+.sign-in-btn:hover,
+.sign-up-btn:hover {
+  background-color: #007bff;
+}
+
+.pass-field {
+  grid-column: 1 / -1;
+}
+
+/* Error Message */
+
+.error-message {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #d8000c;
+  transition: all 0.4s;
+  margin-bottom: 1.4rem;
+
+  opacity: 0;
+}
+
+.error-message-visible {
+  opacity: 1;
+}
+
+.error-message-successfull {
+  opacity: 1;
+  color: #4bb543;
+}
+
+/* Don't you have an account? */
+
+.sign-up-text {
+  position: absolute;
+  top: 7%;
+  right: 5%;
+
+  font-size: 1.7rem;
+}
+
+.policy-terms-text {
+  position: absolute;
+
+  bottom: 10%;
+  right: 5%;
+
+  font-size: 1.4rem;
+}
+
+.sign-up-link {
+  text-decoration: none;
+  color: #4488c7;
+
+  transition: all 0.4s;
+}
+
+.sign-up-link:hover {
+  color: #007bff;
+}
